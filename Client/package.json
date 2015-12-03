@@ -1,0 +1,16 @@
+{
+  "name": "megjohclient",
+  "version": "1.0.0",
+  "description": "game client",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johan JULIEN",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "socket.io": "^1.3.7"
+  }
+}
