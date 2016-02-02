@@ -1,14 +1,25 @@
-"use strict";
+import {Component} from 'angular2/core';
+import {Animation} from 'js/classes/animation';
 
-class Main {
 
+@Component({
+	selector: 'megjoh',
+	template: `<h1>Megjoh game !</h1>
+	<div>
+		X : 
+		<span id="position-x"></span>
+	</div>
+	<div>
+		Y : 
+		<span id="position-y"></span>
+	</div>
+	<canvas id="canvas" tabindex="1" width="1280" height="720">
+	</canvas>`
+})
 
+export class AppComponent {
+	
 	constructor() {
-
-	}
-
-	init() {
-
 
 		let start = function() {
 			let animation = new Animation([img, imgMegaman]);
@@ -35,12 +46,6 @@ class Main {
 		let imgMegaman = new Image();
 		imgMegaman.src = 'img/mega1.png';
 		imgMegaman.load = loadImage();
-
-		// spriteList.push(img, imgMegaman)
 	}
+
 }
-
-var main = new Main();
-main.init();
-
-

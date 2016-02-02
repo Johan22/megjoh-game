@@ -2,7 +2,7 @@
 
 // cat 400*120
 
-class Cat {
+export class Cat {
 
 	constructor(spritePos, x, y, width, height) {
 		this.spritePosition = spritePos;
